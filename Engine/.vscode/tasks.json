@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build",
+        "type": "shell",
+        "command": "make",
+        "args": ["all"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "detail": "Build the project using Makefile"
+      },
+      {
+        "label": "clean",
+        "type": "shell",
+        "command": "make",
+        "args": ["clean"],
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        },
+        "problemMatcher": [],
+        "detail": "Clean up build artifacts"
+      },
+      {
+        "label": "rebuild",
+        "type": "shell",
+        "command": "make",
+        "args": ["re"],
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        },
+        "problemMatcher": [],
+        "detail": "Rebuild the project (clean and build)"
+      }
+    ]
+  }
+  
